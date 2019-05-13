@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Listado de votantes</title>
+
+	<link rel="stylesheet" type="text/css" href="CSS/ListadoVotantes.css"/>
+</head>
+<body>
+
+	<div id="titulo">
+    	<p id="header">Listado de votantes</p>
+  	</div>
+
+	<div id="main-container">
+
+		<table>
+
+			<?php
+				session_start();
+				$ArrayVotantes = $_SESSION['ARRAYVOTANTES'];
+				foreach ($ArrayVotantes as $fila) {
+				
+			?>
+
+			<thead>
+				<tr>
+					<th>NIF</th>
+					<th>APELLIDOS</th>
+					<th>NOMBRE</th>
+					<th>DOMICILIO</th>
+					<th>FECHA_NACIMIENTO</th>
+					<th>VOTADO</th>
+				</tr>
+			</thead>
+
+			<tr>
+				<td><?php echo $fila['NIF']; ?></td>
+				<td><?php echo $fila['APELLIDOS']; ?></td>
+				<td><?php echo $fila['NOMBRE']; ?></td>
+				<td><?php echo $fila['DOMICILIO']; ?></td>
+				<td><?php echo $fila['FECHA_NACIMIENTO']; ?></td>
+				<td><?php echo $fila['VOTADO']; ?></td>
+			</tr>
+			<!--<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>-->
+		</table>
+	</div>
+
+	<?php
+		}
+	?>
+</body>
+</html>
+
+

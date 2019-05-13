@@ -1,0 +1,88 @@
+/*
+	Color fondo: #632432;
+	Color header: 246355;
+	Color borde: 0F362D;
+	Color iluminado: 369681;
+*/
+
+div#titulo{
+	width:100%;
+	margin-top:80px;
+}
+
+p#header{
+	text-align: center;
+	font-size: 2.5em;
+	color:#9a9a9a;
+}
+
+
+body{
+	/*max-width:*/
+	background-color: white;
+	font-family: Arial;
+}
+
+#main-container{
+	margin: 100px auto;
+	width: 600px;
+}
+
+table{
+	background-color: white;
+	text-align: center;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: #3399ff;
+	border-bottom: solid 5px #3366ff;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #3399ff;
+	color: white;
+}
+
+.atras {
+    background-color: red;
+    color: white;
+    padding: .5rem;
+    margin: .2rem 0;
+    margin-left: 600px;
+    margin-right: 600px;
+    border: none;
+    border-bottom: solid #C8C8C8 .2rem;
+    transition: all .5s;
+    border-radius: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.atras:hover {
+    background-color: #F00000;
+}
+
+.atras:focus {
+    border-bottom: solid #3399ff .2rem;
+    border-radius: 10px;
+}
+
+.atras:focus {
+    border-bottom: solid #3399ff .2rem;
+    border-radius: 10px;
+}
+
+a:link {
+    text-decoration: none; 
+} 

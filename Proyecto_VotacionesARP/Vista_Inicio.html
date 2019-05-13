@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="CSS/VistaAltaVotante.css"/>
+    <style>
+      select, option {
+        width: 250px;
+      }
+        
+    </style>        
+  </head>
+  <body>
+    
+    <div class="caja">
+        <div class="titulin">
+        <h2>Inicio <span>De</span> Sesion</h2></div>
+    <form id="formulario" method="post" action="controlador_InicioVotante.php">
+      
+      <input class="input" id="nif" type="text" name="nif" maxlength="9" pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))" placeholder="NIF:" required></input>
+        <br/>
+      <input class="input" id="pass" type="password" name="pass" placeholder="Password:" required></input>
+        <br/>
+              
+<input class="submit" type="submit" name="submit" value="Log In"></input>
+    </form >
+
+    </div>
+  </body>
+</html>

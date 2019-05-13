@@ -1,0 +1,102 @@
+html {
+    font-size:  16px;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.caja {
+    max-width: 450px;
+    height: auto;
+    background-color: white;
+    margin: 5% auto;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    
+}
+
+.titulin{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0 1rem;
+    border-top: solid .4rem #3399ff;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.titulin h2 {
+    color: #CAC8C8;
+    font-size: 18px;
+}
+
+h2 span {
+    font-size: 22px;
+    color: #3399ff;
+}
+
+#formulario{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.botonaceptar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.input, .aceptar{
+    background-color: #EFEFEF;
+    padding: .5rem;
+    margin: .5rem 0;
+    border: none;
+    border-bottom: solid #C8C8C8 .2rem;
+    transition: all .5s;
+    border-radius: 10px;
+}
+
+/* Para cambiar el color cuando esta seleccionado */
+
+.input:focus {
+    border-bottom: solid #3399ff .2rem;
+    border-radius: 10px;
+}
+
+.aceptar:focus {
+    border-bottom: solid #3399ff .2rem;
+    border-radius: 10px;
+}
+
+.caja1 {
+    max-width: 450px;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    border-top: solid .4rem #3399ff;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    
+}
+
+.submit {
+    background-color: #3399ff;
+    color: white;
+    padding: .5rem;
+    margin: .5rem 0;
+    border: none;
+    border-bottom: solid #C8C8C8 .2rem;
+    transition: all .5s;
+    border-radius: 10px;
+}
+
+.submit:hover {
+    background-color: 0080FF;
+}
